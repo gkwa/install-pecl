@@ -2,6 +2,8 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [TODO](#todo)
+    - [TODO using expect to automate pecl is not working](#todo-using-expect-to-automate-pecl-is-not-working)
 - [Using curl to post to a web form](#using-curl-to-post-to-a-web-form)
     - [Given this form, this post works](#given-this-form-this-post-works)
     - [curl 417 Expectation Failed](#curl-417-expectation-failed)
@@ -10,15 +12,13 @@
     - [old notes, many failed attempts](#old-notes-many-failed-attempts)
         - [See if you can post to wizard from cli](#see-if-you-can-post-to-wizard-from-cli)
             - [log](#log)
-- [TODO](#todo)
-    - [TODO using expect to automate pecl is not working](#todo-using-expect-to-automate-pecl-is-not-working)
-- [chocolatey installs php](#chocolatey-installs-php)
-    - [remote debugging with xdebug](#remote-debugging-with-xdebug)
+- [remote debugging with xdebug](#remote-debugging-with-xdebug)
     - [TODO install precompiled xdebug dll for windows](#todo-install-precompiled-xdebug-dll-for-windows)
     - [Precompiled Windows Modules](#precompiled-windows-modules)
     - [install xdebug using pear pecl](#install-xdebug-using-pear-pecl)
         - [pecl install xdebug](#pecl-install-xdebug)
         - [log](#log)
+- [chocolatey installs php](#chocolatey-installs-php)
     - [log](#log)
     - [Add c:\tools\tmp\pear.bat to your path](#add-c-tools-tmp-pear-bat-to-your-path)
     - [Expect hasn't been ported to win64](#expect-hasn-t-been-ported-to-win64)
@@ -31,6 +31,12 @@
     - [chocolatey's php installer will put path in your env path, but not system's path](#chocolatey-s-php-installer-will-put-path-in-your-env-path-but-not-system-s-path)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+TODO
+====
+
+TODO using expect to automate pecl is not working
+-------------------------------------------------
 
 Using curl to post to a web form
 ================================
@@ -320,17 +326,8 @@ old notes, many failed attempts
     </html>
     [Administrator@SBX3512E41:/c/tools/php]$
 
-TODO
-====
-
-TODO using expect to automate pecl is not working
--------------------------------------------------
-
-chocolatey installs php
-=======================
-
 remote debugging with xdebug
-----------------------------
+============================
 
 -   <https://xdebug.org/docs/remote>
 
@@ -432,6 +429,9 @@ variable php~suffix~ does not match
     ERROR: The DSP xdebug.dsp does not exist.
 
     C:\Users\Administrator>
+
+chocolatey installs php
+=======================
 
 log
 ---

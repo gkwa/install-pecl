@@ -1,3 +1,6 @@
+* TODO
+** TODO using expect to automate pecl is not working
+
 * Using curl to post to a web form
 ** Given this form, this post works
 
@@ -299,13 +302,8 @@ curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wi
 [Administrator@SBX3512E41:/c/tools/php]$
 #+END_SRC
 
-* TODO
-** TODO using expect to automate pecl is not working
-
-* chocolatey installs php
-** remote debugging with xdebug
+* remote debugging with xdebug
 + https://xdebug.org/docs/remote
-
 ** TODO install precompiled xdebug dll for windows
 
 #+BEGIN_SRC
@@ -425,6 +423,7 @@ ERROR: The DSP xdebug.dsp does not exist.
 C:\Users\Administrator>
 #+END_SRC
 
+* chocolatey installs php
 ** log
 
 #+BEGIN_SRC
