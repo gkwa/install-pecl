@@ -20,7 +20,7 @@
         - [log](#log)
 - [chocolatey installs php](#chocolatey-installs-php)
     - [log](#log)
-    - [Add pear.bat to your path](#add-pear-bat-to-your-path)
+    - [Add `pear.bat` to your path](#add-pear-bat-to-your-path)
     - [Expect hasnt been ported to win64](#expect-hasnt-been-ported-to-win64)
     - [teacup install Expect](#teacup-install-expect)
     - [curl download and run pear](#curl-download-and-run-pear)
@@ -520,8 +520,8 @@ log
 
     C:\cygwin\tmp\install-pecl>
 
-Add pear.bat to your path
--------------------------
+Add `pear.bat` to your path
+---------------------------
 
 Add path to `c:\tools\tmp\pear.bat` to your user path
 
