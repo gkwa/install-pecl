@@ -21,7 +21,7 @@
 - [chocolatey installs php](#chocolatey-installs-php)
     - [log](#log)
     - [Add c:\tools\tmp\pear.bat to your path](#add-c-tools-tmp-pear-bat-to-your-path)
-    - [Expect hasn't been ported to win64](#expect-hasn-t-been-ported-to-win64)
+    - [Expect hasnt been ported to win64](#expect-hasnt-been-ported-to-win64)
     - [teacup install Expect](#teacup-install-expect)
     - [curl download and run pear](#curl-download-and-run-pear)
     - [example expect script to install pecl](#example-expect-script-to-install-pecl)
@@ -529,8 +529,8 @@ Add path to pear.bat to your user path
     pathed -a "c:\tools\tmp"
     pathed -a "c:\users\administrator\install-pecl"
 
-Expect hasn't been ported to win64
-----------------------------------
+Expect hasnt been ported to win64
+---------------------------------
 
 -   <https://community.activestate.com/faq/where-expect>
 
@@ -578,7 +578,7 @@ dependendencies
 ---------------
 
     # for expect since go-pear.phar doesn't support commandline switches
-    # Expect hasn't been ported to win64
+    # Expect hasnt been ported to win64
     choco install activetcl --forcex86 -yes
     c:/tools/activetcl/bin/teacup install Expect
     choco install vcredist2015 -yes
