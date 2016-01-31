@@ -2,9 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [TODO](#todo)
-    - [TODO using expect to automate pecl is not working](#todo-using-expect-to-automate-pecl-is-not-working)
-- [chocolatey installs php](#chocolatey-installs-php)
+- [Using curl to post to a web form](#using-curl-to-post-to-a-web-form)
     - [Given this form, this post works](#given-this-form-this-post-works)
     - [curl 417 Expectation Failed](#curl-417-expectation-failed)
         - [trace log](#trace-log)
@@ -12,6 +10,9 @@
     - [old notes, many failed attempts](#old-notes-many-failed-attempts)
         - [See if you can post to wizard from cli](#see-if-you-can-post-to-wizard-from-cli)
             - [log](#log)
+- [TODO](#todo)
+    - [TODO using expect to automate pecl is not working](#todo-using-expect-to-automate-pecl-is-not-working)
+- [chocolatey installs php](#chocolatey-installs-php)
     - [remote debugging with xdebug](#remote-debugging-with-xdebug)
     - [TODO install precompiled xdebug dll for windows](#todo-install-precompiled-xdebug-dll-for-windows)
     - [Precompiled Windows Modules](#precompiled-windows-modules)
@@ -31,14 +32,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-TODO
-====
-
-TODO using expect to automate pecl is not working
--------------------------------------------------
-
-chocolatey installs php
-=======================
+Using curl to post to a web form
+================================
 
 Given this form, this post works
 --------------------------------
@@ -324,6 +319,15 @@ old notes, many failed attempts
      </body>
     </html>
     [Administrator@SBX3512E41:/c/tools/php]$
+
+TODO
+====
+
+TODO using expect to automate pecl is not working
+-------------------------------------------------
+
+chocolatey installs php
+=======================
 
 remote debugging with xdebug
 ----------------------------

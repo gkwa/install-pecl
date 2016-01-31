@@ -1,7 +1,4 @@
-* TODO
-** TODO using expect to automate pecl is not working
-
-* chocolatey installs php
+* Using curl to post to a web form
 ** Given this form, this post works
 
 I want to send =php -i= output to https://xdebug.org/wizard.php
@@ -9,13 +6,13 @@ I want to send =php -i= output to https://xdebug.org/wizard.php
 On this page https://xdebug.org/wizard.php, the form looks like this:
 #+BEGIN_SRC
   <form method='post'>
-    <textarea name='data'></textarea>
+	<textarea name='data'></textarea>
 
-    <p>The information that you upload will not be stored.</p>
+	<p>The information that you upload will not be stored.</p>
 
-    <p><input type='submit'
-           name='submit'
-           value='Analyse my phpinfo() output' /></p>
+	<p><input type='submit'
+		   name='submit'
+		   value='Analyse my phpinfo() output' /></p>
   </form>
 #+END_SRC
 
@@ -147,7 +144,7 @@ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinf
 0140: - Expectation Failed. </body>.</html>.
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
  <head>
   <title>417 - Expectation Failed</title>
@@ -159,7 +156,6 @@ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinf
 == Info: Closing connection 0
 [demo@demos-MBP:/tmp]$
 #+END_SRC
-
 
 ** old notes, many failed attempts
 
@@ -303,6 +299,10 @@ curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wi
 [Administrator@SBX3512E41:/c/tools/php]$
 #+END_SRC
 
+* TODO
+** TODO using expect to automate pecl is not working
+
+* chocolatey installs php
 ** remote debugging with xdebug
 + https://xdebug.org/docs/remote
 
@@ -604,12 +604,12 @@ Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
 [Administrator@SBX3512E41:~(master)]$ cmd /c reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
-    Path    REG_SZ    C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;
+	Path    REG_SZ    C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;
 
 [Administrator@SBX3512E41:~(master)]$ cmd /c reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path | tr : '\n'
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
-    Path    REG_SZ    C
+	Path    REG_SZ    C
 \windows\system32;C
 \windows;C
 \windows\System32\Wbem;C
@@ -619,7 +619,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 [Administrator@SBX3512E41:~(master)]$ cmd /c "reg query hkcu\environment /v Path"
 
 HKEY_CURRENT_USER\environment
-    Path    REG_SZ    C:\cygwin\bin;C:\tools\php;
+	Path    REG_SZ    C:\cygwin\bin;C:\tools\php;
 
 [Administrator@SBX3512E41:~(master)]$
 #+END_SRC
