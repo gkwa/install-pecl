@@ -20,7 +20,7 @@
         - [log](#log)
 - [chocolatey installs php](#chocolatey-installs-php)
     - [log](#log)
-    - [Add c:\tools\tmp\pear.bat to your path](#add-c-tools-tmp-pear-bat-to-your-path)
+    - [Add pear.bat to your path](#add-pear-bat-to-your-path)
     - [Expect hasnt been ported to win64](#expect-hasnt-been-ported-to-win64)
     - [teacup install Expect](#teacup-install-expect)
     - [curl download and run pear](#curl-download-and-run-pear)
@@ -520,10 +520,10 @@ log
 
     C:\cygwin\tmp\install-pecl>
 
-Add c:\tools\tmp\pear.bat to your path
---------------------------------------
+Add pear.bat to your path
+-------------------------
 
-Add path to pear.bat to your user path
+Add path to `c:\tools\tmp\pear.bat` to your user path
 
     powershell -noprofile -executionpolicy unrestricted -command "(new-object System.Net.WebClient).DownloadFile('http://dl.dropbox.com/u/9140609/sb/ephemeral/pathed.exe','pathed.exe')"
     pathed -a "c:\tools\tmp"
