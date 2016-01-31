@@ -525,7 +525,7 @@ pathed -a "c:\tools\tmp"
 pathed -a "c:\users\administrator\install-pecl"
 #+END_SRC
 
-** Expect hasnt been ported to win64
+** Expect has not been ported to win64
 + https://community.activestate.com/faq/where-expect
 
 ** teacup install Expect
@@ -570,7 +570,7 @@ php -d detect_unicode=0 go-pear.phar
 
 #+BEGIN_SRC
 # for expect since go-pear.phar doesn't support commandline switches
-# Expect hasnt been ported to win64
+# Expect has not been ported to win64
 choco install activetcl --forcex86 -yes
 c:/tools/activetcl/bin/teacup install Expect
 choco install vcredist2015 -yes
