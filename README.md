@@ -7,8 +7,8 @@
 - [Using curl to post to a web form](#using-curl-to-post-to-a-web-form)
     - [Given this form, this post works](#given-this-form-this-post-works)
     - [curl 417 Expectation Failed](#curl-417-expectation-failed)
-        - [trace log](#trace-log)
-        - [trace log](#trace-log)
+        - [trace log1](#trace-log1)
+        - [trace log2](#trace-log2)
     - [old notes, many failed attempts](#old-notes-many-failed-attempts)
         - [See if you can post to wizard from cli](#see-if-you-can-post-to-wizard-from-cli)
             - [log](#log)
@@ -133,13 +133,13 @@ It works with `--header 'Expect: '`:
     curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' \
         --header 'Expect: ' --insecure https://xdebug.org/wizard.php
 
-### trace log
+### trace log1
 
     [demo@demos-MBP:/tmp]$ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --proxy-negotiate --insecure https://xdebug.org/wizard.php --silent --trace-ascii trace.txt --output out.txt; grep -iE 'HTTP.*Expectation Failed' trace.txt
     0000: HTTP/1.1 417 Expectation Failed
     [demo@demos-MBP:/tmp]$
 
-### trace log
+### trace log2
 
     [demo@demos-MBP:/tmp]$ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --http1.1 --insecure https://xdebug.org/wizard.php --trace-ascii /dev/stdout
     == Info:   Trying 82.113.146.227...

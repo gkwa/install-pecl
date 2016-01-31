@@ -97,7 +97,7 @@ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinf
 	--header 'Expect: ' --insecure https://xdebug.org/wizard.php
 #+END_SRC
 
-*** trace log
+*** trace log1
 
 #+BEGIN_SRC
 [demo@demos-MBP:/tmp]$ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --proxy-negotiate --insecure https://xdebug.org/wizard.php --silent --trace-ascii trace.txt --output out.txt; grep -iE 'HTTP.*Expectation Failed' trace.txt
@@ -105,7 +105,7 @@ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinf
 [demo@demos-MBP:/tmp]$
 #+END_SRC
 
-*** trace log
+*** trace log2
 
 #+BEGIN_SRC
 [demo@demos-MBP:/tmp]$ curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --http1.1 --insecure https://xdebug.org/wizard.php --trace-ascii /dev/stdout
