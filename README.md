@@ -196,7 +196,6 @@ old notes, many failed attempts
 -------------------------------
 
     man curl
-    man curl
     curl -L --insecure -X POST --data @o https://xdebug.org/wizard.php
     curl -L --insecure -X POST --data @o http://xdebug.org/wizard.php
     curl -L --insecure -X POST --data-urlencode @o http://xdebug.org/wizard.php
@@ -208,7 +207,6 @@ old notes, many failed attempts
     curl -D -H 'Expect:' -L --insecure --data @o https://xdebug.org/wizard.php
     curl  -H 'Expect:' -L --insecure --data @o https://xdebug.org/wizard.php
     hs curl
-    curl --dump-header -L --insecure -X POST --data-raw @o https://xdebug.org/wizard.php
     curl --dump-header -L --insecure -X POST --data-raw @o https://xdebug.org/wizard.php -v
     curl --dump-header -L --insecure -X POST --data @o https://xdebug.org/wizard.php -v
     # curl  --dump-header -L --insecure -X POST --data @o https://xdebug.org/wizard.php -v
@@ -220,29 +218,22 @@ old notes, many failed attempts
     curl  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30"
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30"
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --anyauth
-    curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --anyauth
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --trace-ascii
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --trace-ascii /dev/stdout
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --trace-ascii /dev/stdout -F
     curl -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" -F
-    man curl
     curl -X POST  -H 'Expect: 100' -L --insecure --form @o https://xdebug.org/wizard.php -v -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30"
     curl -F text=@o -X POST  -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v
     curl -F text=@o -H 'Expect: 100' -L --insecure --data-raw @o https://xdebug.org/wizard.php -v
-    hs curl
     curl -F text=@o -X POST  -H 'Expect: 100' -L --insecure https://xdebug.org/wizard.php -v
     curl -F text=@o -H 'Expect: 100' -L --insecure https://xdebug.org/wizard.php -v
-    curl -F text=@o -L --insecure https://xdebug.org/wizard.php -v
-    curl -F text=@o -H 'Expect: 100' -L --insecure https://xdebug.org/wizard.php
     curl -F text=@o -L --insecure https://xdebug.org/wizard.php -v
     curl -F text=@o -H 'Expect: 100' -L --insecure https://xdebug.org/wizard.php
     curl -F text=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php
     curl -F text=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v
     curl -F data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v
     curl -F value=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v
-    man curl
     curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v
-    curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30"
     curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30"
     curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php -v curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php
     curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30" --form data=@o -H 'Expect: ' -L --insecure https://xdebug.org/wizard.php -v curl --form data=@o -H 'Expect:' -L --insecure https://xdebug.org/wizard.php
@@ -254,7 +245,6 @@ old notes, many failed attempts
     curl --form 'data=@o' -H 'Expect: ' -L --insecure https://xdebug.org/wizard.php -v  | grep -i dll
     curl --form 'data=@o' -H 'Expect: ' -L --insecure https://xdebug.org/wizard.php -v --trace-ascii
     curl --form 'data=@o' -H 'Expect: ' -L --insecure https://xdebug.org/wizard.php -v --trace-ascii /dev/stdout
-    man curl
     curl --form 'data=@o' --header 'Expect: ' -L --insecure https://xdebug.org/wizard.php -v --trace-ascii /dev/stdout
     curl --form 'data=@o' --header 'Expect: 100-continue' -L --insecure https://xdebug.org/wizard.php -v --trace-ascii /dev/stdout
     curl --form 'data=@o' --header 'Expect: 100' -L --insecure https://xdebug.org/wizard.php -v --trace-ascii /dev/stdout
@@ -288,19 +278,11 @@ old notes, many failed attempts
     curl -d data@o2.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl -d data=@o2.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl -d data=@o1.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl -d @o1.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl -d @o2.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl -d data=@o2.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl --data @o1.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data @o1.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data-urlencode @o1.txt --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl --data-urlencode @o --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data-urlencode @o --binary-data --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data-urlencode @o --data-binary --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data-encode @o --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    man curl
-    curl --data-urlencode @o --header 'Expect: ' --insecure https://xdebug.org/wizard.php
-    curl --data-urlencode @o --header 'Expect: ' --insecure https://xdebug.org/wizard.php
     curl --data-urlencode @o --header 'Expect: ' --insecure https://xdebug.org/wizard.php  --tr-encoding
     curl --data-urlencode data=@o --header 'Expect: ' --insecure https://xdebug.org/wizard.php  --tr-encoding
     hs | grep curl >out
