@@ -28,7 +28,7 @@
     - [TODO find a way to get around installing activestate expect just to automate pecl](#todo-find-a-way-to-get-around-installing-activestate-expect-just-to-automate-pecl)
     - [dependendencies](#dependendencies)
         - [log](#log)
-    - [chocolatey's php installer will put path in your env path, but not system's path](#chocolatey-s-php-installer-will-put-path-in-your-env-path-but-not-system-s-path)
+    - [the chocolatey php installer will put path in your env path, but not into system path](#the-chocolatey-php-installer-will-put-path-in-your-env-path-but-not-into-system-path)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -598,8 +598,8 @@ dependendencies
     Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
     [Administrator@SBX3512E41:~(master)]$
 
-chocolatey's php installer will put path in your env path, but not system's path
---------------------------------------------------------------------------------
+the chocolatey php installer will put path in your env path, but not into system path
+-------------------------------------------------------------------------------------
 
     [Administrator@SBX3512E41:~(master)]$ cmd /c reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path
 

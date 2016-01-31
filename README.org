@@ -597,7 +597,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
 [Administrator@SBX3512E41:~(master)]$
 #+END_SRC
 
-** chocolatey's php installer will put path in your env path, but not system's path
+** the chocolatey php installer will put path in your env path, but not into system path
 
 #+BEGIN_SRC
 [Administrator@SBX3512E41:~(master)]$ cmd /c reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path
