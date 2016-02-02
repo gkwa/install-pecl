@@ -22,14 +22,12 @@ On this page https://xdebug.org/wizard.php, the form looks like this:
 It works with =--header 'Expect: '=:
 #+BEGIN_SRC
 php -i >source.txt
-curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output'
-	--header 'Expect: ' --insecure https://xdebug.org/wizard.php
+curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --header 'Expect: ' --insecure https://xdebug.org/wizard.php
 #+END_SRC
 
 It works with =--http1.0=: from http://stackoverflow.com/a/9214195/1495086
 #+BEGIN_SRC
-curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' \
-	--http1.0 --insecure https://xdebug.org/wizard.php
+curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --http1.0 --insecure https://xdebug.org/wizard.php
 #+END_SRC
 
 ** curl 417 Expectation Failed
@@ -404,7 +402,7 @@ ERROR: The DSP xdebug.dsp does not exist.
 C:\Users\Administrator>
 #+END_SRC
 
-*
+* 
 
 #+BEGIN_SRC
 cd /c/php/ext
@@ -424,6 +422,11 @@ xdebug.remote_port = 9000
 xdebug.profiler_output_dir = c:\Windows\Temp
 xdebug.profiler_enable = 1
 zend_extension = C:\PHP\ext\php_xdebug-2.4.0rc4-5.6-vc11.dll
+#+END_SRC
+
+Visit this url
+#+BEGIN_SRC 
+http://tl2.streambox.com/ls/slsmap.php?XDEBUG_SESSION_START=session_name 
 #+END_SRC
 
 * chocolatey installs php

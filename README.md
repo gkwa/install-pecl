@@ -61,14 +61,12 @@ On this page <https://xdebug.org/wizard.php>, the form looks like this:
 It works with `--header 'Expect: '`:
 
     php -i >source.txt
-    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output'
-        --header 'Expect: ' --insecure https://xdebug.org/wizard.php
+    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --header 'Expect: ' --insecure https://xdebug.org/wizard.php
 
 It works with `--http1.0`: from
 <http://stackoverflow.com/a/9214195/1495086>
 
-    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' \
-        --http1.0 --insecure https://xdebug.org/wizard.php
+    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --http1.0 --insecure https://xdebug.org/wizard.php
 
 curl 417 Expectation Failed
 ---------------------------
@@ -427,6 +425,10 @@ variable php~suffix~ does not match
     xdebug.profiler_output_dir = c:\Windows\Temp
     xdebug.profiler_enable = 1
     zend_extension = C:\PHP\ext\php_xdebug-2.4.0rc4-5.6-vc11.dll
+
+Visit this url
+
+    http://tl2.streambox.com/ls/slsmap.php?XDEBUG_SESSION_START=session_name 
 
 chocolatey installs php
 =======================
