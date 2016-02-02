@@ -61,7 +61,7 @@ On this page <https://xdebug.org/wizard.php>, the form looks like this:
 It works with `--header 'Expect: '`:
 
     php -i >source.txt
-    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' \
+    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output'
         --header 'Expect: ' --insecure https://xdebug.org/wizard.php
 
 It works with `--http1.0`: from
@@ -411,6 +411,22 @@ variable php~suffix~ does not match
     ERROR: The DSP xdebug.dsp does not exist.
 
     C:\Users\Administrator>
+
+    cd /c/php/ext
+    curl -i >source.txt
+    curl --data-urlencode data@source.txt --data-urlencode submit='Analyse my phpinfo() output' --http1.0 --insecure https://xdebug.org/wizard.php >out.txt
+    grep -i dll out.txt
+    # curl -O https://xdebug.org/files/php_xdebug-2.4.0rc4-5.6-vc11.dll
+    # chmod 777 php_xdebug-2.4.0rc4-5.6-vc11.dll
+
+    [xdebug]
+    ; https://xdebug.org/docs/all_settings#remote_connect_back
+    xdebug.remote_enable = 1
+    xdebug.remote_connect_back = 1
+    xdebug.remote_port = 9000
+    xdebug.profiler_output_dir = c:\Windows\Temp
+    xdebug.profiler_enable = 1
+    zend_extension = C:\PHP\ext\php_xdebug-2.4.0rc4-5.6-vc11.dll
 
 chocolatey installs php
 =======================
